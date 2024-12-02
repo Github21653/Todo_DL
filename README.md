@@ -1,39 +1,45 @@
-Hello
-**Django Todo Application**
-This is a simple Todo application built using Django, Django Rest Framework, and SQLite as the database. It includes JWT authentication for secure user access and supports Cross-Origin Resource Sharing (CORS) for development purposes.
 
-**Features**
-Authentication: JWT-based authentication using rest_framework_simplejwt.
-CORS: Supports CORS for development with localhost.
-Todo API: A basic API for managing tasks (CRUD operations).
-SQLite Database: Default database used for development and testing.
-Admin Panel: Django admin interface for managing users and tasks.
+## Features
 
-**Requirements**
-Python 3.8 or higher
-Django 4.2.4 or higher
-Django Rest Framework
-djangorestframework_simplejwt for JWT authentication
-corsheaders for CORS support
-
-Running the Project
-Apply the migrations:  python3 manage.py migrate
-Create a superuser to access the Django admin panel:  python manage.py createsuperuser
-Run the development server:  python manage.py runserver
+- Authentication: JWT-based authentication powered by rest_framework_simplejwt
+- CORS Support: Configured for development environments with localhost access.
+- Todo API: Full CRUD operations to manage tasks through a RESTful API.
+- SQLite Database: The project uses SQLite as the default database for development and testing.
+- Django Admin Panel: Allows easy management of users and tasks directly from the Django admin interface.
 
 
-**Project Structure**
-todo_dl/
-├── api/                        # Application for managing API logic
-│   ├── migrations/              # Database migrations
-│   ├── models.py                # Django models for tasks and users
-│   ├── views.py                 # API views
-│   └── urls.py                  # URL routing for API endpoints
-├── todo_dl/                     # Main project folder
-│   ├── settings.py              # Project settings
-│   ├── urls.py                  # Main URL routing
-│   ├── wsgi.py                  # WSGI configuration
-│   └── asgi.py                  # ASGI configuration
-├── manage.py                    # Django management commands
-└── requirements.txt             # Project dependencies
+
+
+## Requirements
+
+Before you begin, ensure that your environment meets the following requirements:
+- Python: Version 3.8 or higher
+- Django: Version 4.2.4 or higher
+- Django Rest Framework: For API creation and management
+- rest_framework_simplejwt: For JWT authentication
+- corsheaders: To handle Cross-Origin Resource Sharing (CORS)
+
+
+## Installation
+
+Follow these steps to get the project up and running locally:
+
+Clone the repository:
+```bash
+  https://github.com/Github21653/Todo_DL.git
+
+  cd todo_dl
+```
+
+Apply the migrations to set up the database:
+```bash
+    python3 manage.py migrate
+```
+
+Create a superuser to access the Django admin panel: 
+```bash
+    python3 manage.py createsuperuser
+```
+
+
 
